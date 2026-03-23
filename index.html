@@ -31,20 +31,24 @@
         
         /* Header */
         header {
-            background-color: #1a252f;
-            color: #ffffff;
+            background-color: #ffffff; /* Changed to white to blend with the JPEG logo */
             text-align: center;
-            padding: 3rem 20px;
+            padding: 2rem 20px;
+            border-bottom: 4px solid #0056b3; /* Matches the dark blue in your logo */
         }
-        header h1 {
-            color: #ffffff;
-            margin: 0;
-            font-size: 2.5rem;
+        .logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px; /* Prevents the logo from being overwhelmingly large on desktop */
+            margin-bottom: 0.5rem;
         }
         header p {
-            font-size: 1.2rem;
-            color: #bdc3c7;
-            margin-top: 10px;
+            font-size: 1.3rem;
+            color: #00a0e3; /* Matches the light blue in your logo */
+            margin-top: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Intro Section */
@@ -79,11 +83,11 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 4px solid #3498db;
+            border-top: 4px solid #00a0e3; /* Accent colour to match logo */
         }
         .service-card h3 {
             margin-top: 0;
-            color: #3498db;
+            color: #0056b3; /* Accent colour to match logo */
         }
         .service-card ul {
             padding-left: 20px;
@@ -109,14 +113,14 @@
             max-width: 100%;
         }
         .contact-info a {
-            color: #3498db;
+            color: #00a0e3;
             text-decoration: none;
             font-weight: bold;
             word-wrap: break-word;
         }
         .contact-info a:hover {
             text-decoration: underline;
-            color: #2980b9;
+            color: #ffffff;
         }
         .address {
             margin-bottom: 2rem;
@@ -147,7 +151,7 @@
 
     <header>
         <div class="container">
-            <h1>Absolute Security & Electrical</h1>
+            <img src="absolute security logo.jpg" alt="Absolute Security & Electrical" class="logo">
             <p>Protecting what's important</p>
         </div>
     </header>
